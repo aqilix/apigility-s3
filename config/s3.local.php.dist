@@ -1,0 +1,18 @@
+<?php
+return array(
+	'aws' => array(
+        'http' => array(
+            'verify' => false
+        )
+    ),
+    's3' => array(
+        'bucket' => array(
+            'name' => 'aqilix',
+            'acl'  => 'public-read',
+        ),
+        'fields' => array(
+            'path'  => array('key_prefix' => 'image'),
+            'thumbPath' => array('key_prefix' => 'image/thumbs')
+        )
+    )
+);

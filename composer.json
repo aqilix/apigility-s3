@@ -1,0 +1,36 @@
+{
+  "name" : "aqilixapi/s3",
+  "description" : "Apigility For Instagram Reverse API",
+  "keywords" : [ "framework", "zf2", "instagram", "api", "apigility", "image", "aws", "s3" ],
+  "authors" : [ {
+    "name" : "Dolly Aswin",
+    "email" : "dolly.aswin@gmail.com"
+  } ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:aqilix/apigility-image"
+    }
+  ],
+  "require" : {
+    "php" : ">=5.3.3",
+    "aws/aws-sdk-php-zf2": "2.0.0",
+    "aqilixapi/image": "dev-master"
+  },
+  "require-dev" : {
+    "zend/zend-studio-development-mode" : "~1.0",
+    "zendframework/zendframework" : ">=2.3.2,<3.0.0",
+    "squizlabs/php_codesniffer" : "1.4.*",
+    "zfcampus/zf-apigility" : "1.0.3",
+    "phpunit/phpunit": "4.*"
+  },
+  "license" : "BSD-3-Clause",
+  "autoload" : {
+    "psr-4": {
+      "AqilixAPI\\S3\\": "src/AqilixAPI/S3"
+    }
+  },
+  "config" : {
+    "process-timeout" : 5000
+  }
+}
