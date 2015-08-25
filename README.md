@@ -17,7 +17,7 @@ This is a ZF2/Apigility module, so to use it on your ZF2/Apigility project need 
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:aqilix/apigility-image"
+      "url": "git@github.com:aqilix/apigility-s3"
     }
   ],
 ```
@@ -40,6 +40,7 @@ return array(
        .
        .
        'AqilixAPI\\S3', 
+       'AwsModule',
     )
 )
 ```

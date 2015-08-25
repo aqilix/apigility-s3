@@ -91,15 +91,6 @@ class S3LinkStrategy implements ServiceLocatorAwareInterface, StrategyInterface
      */
     public function hydrate($value, array $data = null)
     {
-        if (null !== $value) {
-            if (!$value instanceof \DateTime) {
-                throw new \InvalidArgumentException('Expected DateTime object');
-            }
-            // change timezone to server timezone
-            $timezone = new \DateTimeZone(date_default_timezone_get());
-            $value->setTimezone($timezone);
-        }
-
         return $value;
     }
 }
