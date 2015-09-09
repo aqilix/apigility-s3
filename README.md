@@ -6,28 +6,19 @@ This module add Amazon S3 support for aqilix-apigility-image module. The main ta
 
 Dependencies
 ------------
-- [aws/aws-sdk-php-zf2](https://packagist.org/packages/aws/aws-sdk-php-zf2])
+- [aws/aws-sdk-php-zf2](https://packagist.org/packages/aws/aws-sdk-php-zf2)
 - [aqilixapi/image](https://github.com/aqilix/apigility-image)
 
 Installation
 ------------
-This is a ZF2/Apigility module, so to use it on your ZF2/Apigility project need to add `repositories` and `require` on `composer.json`. This modules is not registered to [packagist](http://packagist.org) yet. So, we must configure the `repositories`.
-
-```
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:aqilix/apigility-s3"
-    }
-  ],
-```
+This is a ZF2/Apigility module, so to use it on your ZF2/Apigility project need to add `require` on `composer.json`.
 
 ```
   "require": {
     .
     .
     .
-    "aqilixapi/s3": "1.0"
+    "aqilixapi/s3": "1.1"
   }
 ```
 
