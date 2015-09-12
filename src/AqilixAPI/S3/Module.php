@@ -7,13 +7,12 @@ use AqilixAPI\S3\Service\SharedEventListener;
 
 class Module
 {
-    public function onBootstrap(MvcEvent $e)
+    public function onBootstrap(MvcEvent $mvcEvent)
     {
-        $serviceManager = $e->getApplication()->getServiceManager();
-        $eventManager   = $e->getApplication()->getEventManager();
-        $sharedEventManager = $eventManager->getSharedManager();
+        $serviceManager = $mvcEvent->getApplication()->getServiceManager();
+        $mvcEventventManager = $mvcEvent->getApplication()->getEventManager();
+        $sharedEventManager  = $mvcEventventManager->getSharedManager();
         // attach shared event listener
-        $shared = new SharedEventListener();
         $sharedEventManager->attachAggregate($serviceManager->get('AqilixAPI\\S3\\SharedEventListener'));
         // add S3Link Strategy to hydrator
         $hydratorManager = $serviceManager->get('HydratorManager');
